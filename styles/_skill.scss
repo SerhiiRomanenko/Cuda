@@ -1,0 +1,84 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @media (max-width: 560px) {
+        max-width: 300px;
+        align-items: center;
+        
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+        
+        @media (min-width: 1201px) {
+            &:not(:nth-child(4n)) {
+                
+                &:not(:nth-child(4n)) {
+                    margin-right: 40px;
+                }
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 992px) {
+            min-width: 365px;
+            max-width: 500px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+            @media (min-width: 561px) and (max-width: 768px) {
+                min-width: 265px;
+                max-width: 350px;
+                margin-bottom: 60px;
+                flex-wrap: wrap;
+            }
+
+    &__diagram {
+        width: 160px; 
+        height: 160px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        border-radius: 100px;
+        margin-bottom: 32px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3c4761;
+        
+        &--blue {
+            border: 14px solid #2CBBE8;
+            border-left: 14px solid #E0E9EE;
+        }
+
+        &--pink {
+            border: 14px solid #D84481;
+            border-top: 14px solid #E0E9EE;
+        }
+
+        &--green {
+            border: 14px solid #0DC8AA;
+            border-right: 14px solid #E0E9EE;
+        }
+
+        &--orange {
+            border: 14px solid #EC7E4A;
+            border-bottom: 14px solid #E0E9EE;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: $secondaryColor;
+    }
+}

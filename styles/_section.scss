@@ -1,0 +1,32 @@
+.section {
+    
+    &__title {
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    text-align: center;  
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+        &::after {      
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80px;
+            height: 4px;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        max-width: 630px;
+        margin: auto;
+        font-size: $mediumSize;
+        margin-bottom: 84px;
+    }
+}
+
